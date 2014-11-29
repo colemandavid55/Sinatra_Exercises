@@ -25,3 +25,16 @@ post '/test' do
   @blood_type = params[:bloodtype]
   erb :summary
 end
+
+get '/dog-registration' do
+  erb :dog_registration
+end
+
+get '/dog-registration-results' do
+  puts params
+  @name = params[:name]
+  @weight = params[:weight]
+  @raw_diet = params[:raw_diet]
+  @breed = params[:breed]
+  erb :dog_registration_results
+end
