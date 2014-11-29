@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Summary of Dog Information</title>
+</head>
+<body>
+  <strong>Name: <%= @name %></strong>
+  <p>Weight: <%= @weight %></p>
+  <% if @raw_diet %>
+    <p><%= @name %> is on a raw diet.</p>
+  <% end %>
+  <p>Breed: <%= @breed %></p>
+</body>
+</html>
